@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush Sinha — Full-Stack Developer & AI Enthusiast</title>
+  <meta name="description" content="Ayush Sinha — B.Tech CSE student at BIT Mesra. Full-Stack Developer building AI-powered applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-count" id="loaderCount">0</span>
+      <span class="loader-label">LOADING EXPERIENCE</span>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follow" id="cursorFollow"></div>
+
+  <!-- 3D Canvas (fixed background) -->
+  <canvas id="webgl"></canvas>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <a href="#hero" class="nav-logo" data-cursor>AYUSH<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about" data-cursor>About</a></li>
+      <li><a href="#work" data-cursor>Work</a></li>
+      <li><a href="#skills" data-cursor>Skills</a></li>
+      <li><a href="#contact" data-cursor>Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Scroll progress bar -->
+  <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="section hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal">FULL-STACK DEVELOPER · AI ENTHUSIAST</p>
+        <h1 class="hero-title">
+          <span class="line"><span class="word">AYUSH</span></span>
+          <span class="line"><span class="word accent">SINHA</span></span>
+        </h1>
+        <p class="hero-sub reveal">Building AI-powered applications that solve real-world problems through automation, personalized learning, and intelligent analysis.</p>
+        <div class="hero-actions reveal">
+          <a href="#work" class="btn btn-primary" data-cursor>View Work</a>
+          <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost" data-cursor>Download Resume ↓</a>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>SCROLL</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <span class="section-index">01 / ABOUT</span>
+      <div class="about-grid">
+        <h2 class="big-text" data-stagger>
+          I build practical applications where AI meets modern web technology.
+        </h2>
+        <div class="about-text reveal">
+          <p>I'm a Computer Science undergraduate at BIT Mesra, Patna Campus with a strong interest in Software Development, Artificial Intelligence, and Problem Solving.</p>
+          <p>My focus is on creating products that provide real value — through personalized learning experiences, intelligent document analysis, and data-driven insights.</p>
+          <p>Alongside development, I'm actively strengthening my Data Structures &amp; Algorithms skills to prepare for software engineering roles.</p>
+        </div>
+      </div>
+
+      <!-- Education + stats -->
+      <div class="info-cards">
+        <div class="info-card reveal">
+          <span class="info-label">EDUCATION</span>
+          <h4>B.Tech — Computer Science &amp; Engineering</h4>
+          <p>BIT Mesra, Patna Campus</p>
+          <p class="info-meta">Expected Graduation 2028</p>
+        </div>
+        <div class="info-card reveal">
+          <span class="info-label">CGPA</span>
+          <h4 class="stat-num">8.51</h4>
+          <p>Current academic performance</p>
+        </div>
+        <div class="info-card reveal">
+          <span class="info-label">FOCUS</span>
+          <h4>AI · Full-Stack · DSA</h4>
+          <p>Building &amp; solving, every day</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section work" id="work">
+      <span class="section-index">02 / FEATURED PROJECTS</span>
+      <div class="projects">
+        <article class="project" data-cursor data-href="https://codetutor-jet.vercel.app/">
+          <div class="project-num">01</div>
+          <div class="project-info">
+            <h3>CodeTutor AI</h3>
+            <p>AI-powered coding assistant that analyzes GitHub repositories and provides personalized learning support — line-by-line explanations, AI-generated notes, and interactive quizzes built from the codebase.</p>
+            <ul class="project-features">
+              <li>GitHub repository integration</li>
+              <li>Line-by-line code explanation</li>
+              <li>AI-generated personalized notes</li>
+              <li>Interactive quizzes from the codebase</li>
+            </ul>
+          </div>
+          <div class="project-tags"><span>React.js</span><span>Node.js</span><span>Gemini API</span><span>GitHub API</span></div>
+          <a class="project-link" href="https://codetutor-jet.vercel.app/" target="_blank" rel="noopener" data-cursor aria-label="View CodeTutor AI">↗</a>
+        </article>
+
+        <article class="project" data-cursor data-href="https://ai-resume-analyzer-flame-zeta.vercel.app/">
+          <div class="project-num">02</div>
+          <div class="project-info">
+            <h3>AI Resume Analyzer</h3>
+            <p>Intelligent resume evaluation platform that delivers detailed feedback and optimization suggestions — ATS compatibility checks, skill-gap detection, scoring, and personalized career insights.</p>
+            <ul class="project-features">
+              <li>Resume parsing &amp; analysis</li>
+              <li>ATS compatibility evaluation</li>
+              <li>Skill gap identification &amp; scoring</li>
+              <li>Personalized improvement recommendations</li>
+            </ul>
+          </div>
+          <div class="project-tags"><span>React.js</span><span>Node.js</span><span>Gemini API</span></div>
+          <a class="project-link" href="https://ai-resume-analyzer-flame-zeta.vercel.app/" target="_blank" rel="noopener" data-cursor aria-label="View AI Resume Analyzer">↗</a>
+        </article>
+
+        <article class="project" data-cursor data-href="https://nexus-portfolio-bice-mu.vercel.app/">
+          <div class="project-num">03</div>
+          <div class="project-info">
+            <h3>Personal Portfolio Website</h3>
+            <p>Modern developer portfolio showcasing projects, skills, and achievements — responsive design, project showcase, and professional branding with an optimized user experience.</p>
+            <ul class="project-features">
+              <li>Responsive design</li>
+              <li>Project showcase</li>
+              <li>Contact integration</li>
+              <li>Professional branding</li>
+            </ul>
+          </div>
+          <div class="project-tags"><span>React.js</span><span>Tailwind CSS</span></div>
+          <a class="project-link" href="https://nexus-portfolio-bice-mu.vercel.app/" target="_blank" rel="noopener" data-cursor aria-label="View Portfolio">↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <span class="section-index">03 / SKILLS &amp; CAPABILITIES</span>
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>C++</span><span>•</span><span>PYTHON</span><span>•</span><span>JAVASCRIPT</span><span>•</span><span>REACT</span><span>•</span><span>NODE.JS</span><span>•</span><span>GEMINI API</span><span>•</span><span>MONGODB</span><span>•</span>
+          <span>C++</span><span>•</span><span>PYTHON</span><span>•</span><span>JAVASCRIPT</span><span>•</span><span>REACT</span><span>•</span><span>NODE.JS</span><span>•</span><span>GEMINI API</span><span>•</span><span>MONGODB</span><span>•</span>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><h4>Languages</h4><p>C++, Python, JavaScript</p></div>
+        <div class="skill-card reveal"><h4>Frontend</h4><p>React.js, HTML5, CSS3, Tailwind CSS</p></div>
+        <div class="skill-card reveal"><h4>Backend</h4><p>Node.js, Express.js, REST APIs</p></div>
+        <div class="skill-card reveal"><h4>Databases</h4><p>MongoDB, Firebase</p></div>
+        <div class="skill-card reveal"><h4>AI &amp; APIs</h4><p>Gemini API, Prompt Engineering, AI App Development</p></div>
+        <div class="skill-card reveal"><h4>Tools</h4><p>Git, GitHub, VS Code, Postman</p></div>
+      </div>
+
+      <!-- Achievements -->
+      <div class="achievements">
+        <h3 class="ach-heading reveal">Achievements</h3>
+        <ul class="ach-list">
+          <li class="reveal">Built and deployed multiple full-stack AI applications.</li>
+          <li class="reveal">Actively practicing Data Structures &amp; Algorithms.</li>
+          <li class="reveal">Strong interest in software engineering and AI-driven products.</li>
+          <li class="reveal">Continuously learning modern web technologies and scalable application development.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <span class="section-index">04 / CONTACT</span>
+      <h2 class="contact-title" data-stagger>LET'S BUILD<br />SOMETHING<br /><span class="accent">GREAT.</span></h2>
+      <a href="mailto:ayush.sinha185@gmail.com" class="contact-mail" data-cursor>ayush.sinha185@gmail.com</a>
+      <div class="socials">
+        <a href="https://github.com/Ayush6360" target="_blank" rel="noopener" data-cursor>GitHub</a>
+        <a href="https://www.linkedin.com/in/ayush-kumar-sinha-790bb2328/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+        <a href="mailto:ayush.sinha185@gmail.com" data-cursor>Email</a>
+      </div>
+      <footer class="footer">© 2026 Ayush Sinha — Crafted with WebGL &amp; ❤️</footer>
+    </section>
+  </main>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
